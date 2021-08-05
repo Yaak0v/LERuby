@@ -1,21 +1,16 @@
 # define a phrase class
-class Phrase
-    attr_accessor :content
-
-    def initialize(anything)
-    @content = anything
-    end
+class Phrase < String
 
     # returns true for palindrome, false otherwise
     def palindrome?
-        processed_content = self.content.downcase
+        processed_content = downcase
         #can also be written as processed_content = @content.downcase
         processed_content == processed_content.reverse
     end
 
 
 def louder 
-    louder_content = self.content.upcase
+    louder_content = self.upcase
 end
 
 end
