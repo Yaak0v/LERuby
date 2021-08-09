@@ -1,5 +1,5 @@
 # define a phrase class
-class Phrase
+class Phrase1
     attr_accessor :content
 
     def initialize(anything)
